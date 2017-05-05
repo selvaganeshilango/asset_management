@@ -1,0 +1,38 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.assetmanagement.olympus"
+        },
+        "com.salesforce": {
+            "PACKAGE_NAME": "com.assetmanagement.olympus"
+        },
+        "phonegap-plugin-barcodescanner": {
+            "CAMERA_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "com.assetmanagement.olympus"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.assetmanagement.olympus"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.assetmanagement.olympus"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.assetmanagement.olympus"
+        }
+    },
+    "dependent_plugins": {
+        "phonegap-plugin-push": {
+            "PACKAGE_NAME": "com.assetmanagement.olympus"
+        },
+        "cordova-plugin-wkwebview-engine": {
+            "PACKAGE_NAME": "com.assetmanagement.olympus"
+        }
+    }
+}

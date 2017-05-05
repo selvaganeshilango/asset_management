@@ -1,0 +1,11 @@
+{
+    "remoteAccessConsumerKey": "3MVG9snqYUvtJB1PQHwOYmcfaMdxujlJhUI7fLUOZ31pLBsYaYb7JZVoOUfOSHmC5yuM6u1zDA_263sjNfSZz",
+    "oauthRedirectURI": "olympus://auth/success",
+    "oauthScopes": ["web", "api"],
+    "isLocal": false,
+    "startPage": "apex/CordovaStartingPage",
+    "errorPage": "error.html",
+    "shouldAuthenticate": true,
+    "attemptOfflineLoad": false,
+    "androidPushNotificationClientId": ""
+}
