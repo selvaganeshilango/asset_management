@@ -48,6 +48,40 @@
     <feature name="com.salesforce.smartsync">
         <param name="ios-package" value="SFSmartSyncPlugin" />
     </feature>
+    <feature name="BarcodeScanner">
+        <param name="ios-package" value="CDVBarcodeScanner" />
+    </feature>
+    <feature name="Console">
+        <param name="ios-package" value="CDVLogger" />
+    </feature>
+    <feature name="Notification">
+        <param name="ios-package" value="CDVNotification" />
+    </feature>
+    <feature name="MWBarcodeScanner">
+        <param name="ios-package" value="CDVMWBarcodeScanner" />
+    </feature>
+    <feature name="Vibration">
+        <param name="ios-package" value="CDVVibration" />
+    </feature>
+    <feature name="startApp">
+        <param name="ios-package" value="startApp" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVInAppBrowser" />
+    </feature>
+    <feature name="ThemeableBrowser">
+        <param name="ios-package" value="CDVThemeableBrowser" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="ScanditSDK">
+        <param name="ios-package" value="ScanditSDK" />
+    </feature>
+    <feature name="SBSScanCasePlugin">
+        <param name="ios-package" value="SBSScanCasePlugin" />
+    </feature>
     <name>Olympus-Asset-Mgt-Cordova</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -80,16 +114,6 @@
     <preference name="PaginationMode" value="unpaginated" />
     <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
     <preference name="deployment-target" value="9.0" />
-    <feature name="BarcodeScanner">
-        <param name="ios-package" value="CDVBarcodeScanner" />
-    </feature>
-    <feature name="Console">
-        <param name="ios-package" value="CDVLogger" />
-    </feature>
-    <feature name="StatusBar">
-        <param name="ios-package" value="CDVStatusBar" />
-        <param name="onload" value="true" />
-    </feature>
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarStyle" value="lightcontent" />
 </widget>

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Olympus-Asset-Mgt-Cordova/Resources/BarcodeOverlay.xib">
+   </FileRef>
+   <FileRef
       location = "group:Olympus-Asset-Mgt-Cordova.xcodeproj">
    </FileRef>
 </Workspace>

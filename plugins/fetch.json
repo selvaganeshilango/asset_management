@@ -1,12 +1,4 @@
 {
-    "cordova-plugin-whitelist": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-whitelist@1"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "com.salesforce": {
         "source": {
             "type": "git",
@@ -57,6 +49,71 @@
         "source": {
             "type": "registry",
             "id": "cordova-plugin-console"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.mirasense.scanditsdk.plugin": {
+        "source": {
+            "type": "local",
+            "path": "/Users/reginaldmiranda/Desktop/Cloud Sherpas Work Files/Work Files/Olympus/scandit-barcodescanner-phonegap_5.2.1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "manateeworks-barcodescanner-v3": {
+        "source": {
+            "type": "registry",
+            "id": "manateeworks-barcodescanner-v3"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-dialogs": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-dialogs"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "es6-promise-plugin": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/vstirbu/PromisesPlugin.git",
+            "subdir": "."
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-plugin-vibration": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-vibration"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.lampa.startapp": {
+        "source": {
+            "type": "registry",
+            "id": "https://github.com/lampaa/com.lampa.startapp.git"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-inappbrowser": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-inappbrowser@~1.7.1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-themeablebrowser": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-themeablebrowser"
         },
         "is_top_level": true,
         "variables": {}

@@ -1,7 +1,7 @@
 {
-    "remoteAccessConsumerKey": "3MVG9snqYUvtJB1PQHwOYmcfaMdxujlJhUI7fLUOZ31pLBsYaYb7JZVoOUfOSHmC5yuM6u1zDA_263sjNfSZz",
+    "remoteAccessConsumerKey": "3MVG9fMtCkV6eLhc9h73_Cu8pX82zNeVQPJpjlLnXQxq6kw4aMes0eZ2QRrp6p4RvquWPXqbyCbwwoxhhSMQf",
     "oauthRedirectURI": "olympus://auth/success",
-    "oauthScopes": ["web", "api"],
+    "oauthScopes": ["web", "api", "refresh_token"],
     "isLocal": false,
     "startPage": "apex/CordovaStartingPage",
     "errorPage": "error.html",

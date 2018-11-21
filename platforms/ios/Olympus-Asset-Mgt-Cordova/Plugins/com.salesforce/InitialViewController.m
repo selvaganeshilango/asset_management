@@ -49,6 +49,10 @@ static NSString * const kDefaultHybridAppLabel = @"Loading...";
     [self.view addSubview:self.appLabel];
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 - (void)viewWillLayoutSubviews
 {
     CGSize appLabelTextSize = [self.appLabel.text sizeWithAttributes:@{ NSFontAttributeName:self.appLabel.font }];

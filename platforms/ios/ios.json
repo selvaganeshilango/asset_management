@@ -1,311 +1,541 @@
 {
-    "prepare_queue": {
-        "installed": [],
-        "uninstalled": []
-    },
-    "config_munge": {
-        "files": {
-            "config.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"PushNotification\"><param name=\"ios-package\" value=\"PushPlugin\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"CDVWKWebViewEngine\"><param name=\"ios-package\" value=\"CDVWKWebViewEngine\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<preference name=\"CordovaWebViewEngine\" value=\"CDVWKWebViewEngine\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<preference name=\"BackupWebStorage\" value=\"local\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<preference name=\"deployment-target\" value=\"9.0\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<allow-navigation href=\"https://localhost\" subdomains=\"true\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<allow-navigation href=\"https://*.force.com\" subdomains=\"true\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<allow-navigation href=\"https://*.salesforce.com\" subdomains=\"true\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<access origin=\"https://localhost\" subdomains=\"true\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<access origin=\"https://*.force.com\" subdomains=\"true\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<access origin=\"https://*.salesforce.com\" subdomains=\"true\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"com.salesforce.oauth\"><param name=\"ios-package\" value=\"SalesforceOAuthPlugin\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"com.salesforce.network\"><param name=\"ios-package\" value=\"SFNetworkPlugin\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"com.salesforce.sdkinfo\"><param name=\"ios-package\" value=\"SFSDKInfoPlugin\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"com.salesforce.sfaccountmanager\"><param name=\"ios-package\" value=\"SFAccountManagerPlugin\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"com.salesforce.smartstore\"><param name=\"ios-package\" value=\"SFSmartStorePlugin\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"com.salesforce.smartsync\"><param name=\"ios-package\" value=\"SFSmartSyncPlugin\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"BarcodeScanner\"><param name=\"ios-package\" value=\"CDVBarcodeScanner\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"StatusBar\"><param name=\"ios-package\" value=\"CDVStatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<preference name=\"StatusBarOverlaysWebView\" value=\"true\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<preference name=\"StatusBarStyle\" value=\"lightcontent\" />",
-                            "count": 1
-                        }
-                    ]
-                }
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+              "count": 1
             },
-            "*-Info.plist": {
-                "parents": {
-                    "UIBackgroundModes": [
-                        {
-                            "xml": "<array><string>remote-notification</string></array>",
-                            "count": 1
-                        }
-                    ],
-                    "NSCameraUsageDescription": [
-                        {
-                            "xml": "<string> </string>",
-                            "count": 1
-                        }
-                    ]
-                }
+            {
+              "xml": "<feature name=\"PushNotification\"><param name=\"ios-package\" value=\"PushPlugin\" /></feature>",
+              "count": 1
             },
-            "*/Entitlements-Debug.plist": {
-                "parents": {
-                    "aps-environment": [
-                        {
-                            "xml": "<string>development</string>",
-                            "count": 1
-                        }
-                    ]
-                }
+            {
+              "xml": "<feature name=\"CDVWKWebViewEngine\"><param name=\"ios-package\" value=\"CDVWKWebViewEngine\" /></feature>",
+              "count": 1
             },
-            "*/Entitlements-Release.plist": {
-                "parents": {
-                    "aps-environment": [
-                        {
-                            "xml": "<string>production</string>",
-                            "count": 1
-                        }
-                    ]
-                }
+            {
+              "xml": "<preference name=\"CordovaWebViewEngine\" value=\"CDVWKWebViewEngine\" />",
+              "count": 1
+            },
+            {
+              "xml": "<preference name=\"BackupWebStorage\" value=\"local\" />",
+              "count": 1
+            },
+            {
+              "xml": "<preference name=\"deployment-target\" value=\"9.0\" />",
+              "count": 1
+            },
+            {
+              "xml": "<allow-navigation href=\"https://localhost\" subdomains=\"true\" />",
+              "count": 1
+            },
+            {
+              "xml": "<allow-navigation href=\"https://*.force.com\" subdomains=\"true\" />",
+              "count": 1
+            },
+            {
+              "xml": "<allow-navigation href=\"https://*.salesforce.com\" subdomains=\"true\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://localhost\" subdomains=\"true\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://*.force.com\" subdomains=\"true\" />",
+              "count": 1
+            },
+            {
+              "xml": "<access origin=\"https://*.salesforce.com\" subdomains=\"true\" />",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"com.salesforce.oauth\"><param name=\"ios-package\" value=\"SalesforceOAuthPlugin\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"com.salesforce.network\"><param name=\"ios-package\" value=\"SFNetworkPlugin\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"com.salesforce.sdkinfo\"><param name=\"ios-package\" value=\"SFSDKInfoPlugin\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"com.salesforce.sfaccountmanager\"><param name=\"ios-package\" value=\"SFAccountManagerPlugin\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"com.salesforce.smartstore\"><param name=\"ios-package\" value=\"SFSmartStorePlugin\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"com.salesforce.smartsync\"><param name=\"ios-package\" value=\"SFSmartSyncPlugin\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"BarcodeScanner\"><param name=\"ios-package\" value=\"CDVBarcodeScanner\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"MWBarcodeScanner\"><param name=\"ios-package\" value=\"CDVMWBarcodeScanner\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Vibration\"><param name=\"ios-package\" value=\"CDVVibration\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"startApp\"><param name=\"ios-package\" value=\"startApp\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"ThemeableBrowser\"><param name=\"ios-package\" value=\"CDVThemeableBrowser\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"StatusBar\"><param name=\"ios-package\" value=\"CDVStatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<preference name=\"StatusBarOverlaysWebView\" value=\"true\" />",
+              "count": 1
+            },
+            {
+              "xml": "<preference name=\"StatusBarStyle\" value=\"lightcontent\" />",
+              "count": 1
             }
+          ],
+          "/widget": [
+            {
+              "xml": "<feature name=\"ScanditSDK\"><param name=\"ios-package\" value=\"ScanditSDK\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"SBSScanCasePlugin\"><param name=\"ios-package\" value=\"SBSScanCasePlugin\" /></feature>",
+              "count": 1
+            }
+          ]
         }
-    },
-    "installed_plugins": {
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.assetmanagement.olympus"
-        },
-        "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.assetmanagement.olympus"
-        },
-        "phonegap-plugin-push": {
-            "PACKAGE_NAME": "com.assetmanagement.olympus"
-        },
-        "cordova-plugin-wkwebview-engine": {
-            "PACKAGE_NAME": "com.assetmanagement.olympus"
-        },
-        "com.salesforce": {
-            "PACKAGE_NAME": "com.assetmanagement.olympus"
-        },
-        "phonegap-plugin-barcodescanner": {
-            "CAMERA_USAGE_DESCRIPTION": " ",
-            "PACKAGE_NAME": "com.assetmanagement.olympus"
-        },
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.assetmanagement.olympus"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.assetmanagement.olympus"
+      },
+      "*-Info.plist": {
+        "parents": {
+          "UIBackgroundModes": [
+            {
+              "xml": "<array><string>remote-notification</string></array>",
+              "count": 1
+            }
+          ],
+          "NSCameraUsageDescription": [
+            {
+              "xml": "<string> </string>",
+              "count": 1
+            },
+            {
+              "xml": "<string>For Barcode Scanning</string>",
+              "count": 1
+            },
+            {
+              "xml": "<string>Required for Scanning</string>",
+              "count": 1
+            }
+          ]
         }
-    },
-    "dependent_plugins": {},
-    "modules": [
-        {
-            "id": "cordova-plugin-device.device",
-            "file": "plugins/cordova-plugin-device/www/device.js",
-            "pluginId": "cordova-plugin-device",
-            "clobbers": [
-                "device"
-            ]
-        },
-        {
-            "id": "phonegap-plugin-push.PushNotification",
-            "file": "plugins/phonegap-plugin-push/www/push.js",
-            "pluginId": "phonegap-plugin-push",
-            "clobbers": [
-                "PushNotification"
-            ]
-        },
-        {
-            "id": "cordova-plugin-wkwebview-engine.ios-wkwebview-exec",
-            "file": "plugins/cordova-plugin-wkwebview-engine/src/www/ios/ios-wkwebview-exec.js",
-            "pluginId": "cordova-plugin-wkwebview-engine",
-            "clobbers": [
-                "cordova.exec"
-            ]
-        },
-        {
-            "id": "com.salesforce.plugin.oauth",
-            "file": "plugins/com.salesforce/www/com.salesforce.plugin.oauth.js",
-            "pluginId": "com.salesforce"
-        },
-        {
-            "id": "com.salesforce.plugin.network",
-            "file": "plugins/com.salesforce/www/com.salesforce.plugin.network.js",
-            "pluginId": "com.salesforce"
-        },
-        {
-            "id": "com.salesforce.plugin.sdkinfo",
-            "file": "plugins/com.salesforce/www/com.salesforce.plugin.sdkinfo.js",
-            "pluginId": "com.salesforce"
-        },
-        {
-            "id": "com.salesforce.plugin.smartstore",
-            "file": "plugins/com.salesforce/www/com.salesforce.plugin.smartstore.js",
-            "pluginId": "com.salesforce",
-            "clobbers": [
-                "navigator.smartstore"
-            ]
-        },
-        {
-            "id": "com.salesforce.plugin.smartstore.client",
-            "file": "plugins/com.salesforce/www/com.salesforce.plugin.smartstore.client.js",
-            "pluginId": "com.salesforce",
-            "clobbers": [
-                "navigator.smartstoreClient"
-            ]
-        },
-        {
-            "id": "com.salesforce.plugin.sfaccountmanager",
-            "file": "plugins/com.salesforce/www/com.salesforce.plugin.sfaccountmanager.js",
-            "pluginId": "com.salesforce"
-        },
-        {
-            "id": "com.salesforce.plugin.smartsync",
-            "file": "plugins/com.salesforce/www/com.salesforce.plugin.smartsync.js",
-            "pluginId": "com.salesforce"
-        },
-        {
-            "id": "com.salesforce.util.bootstrap",
-            "file": "plugins/com.salesforce/www/com.salesforce.util.bootstrap.js",
-            "pluginId": "com.salesforce"
-        },
-        {
-            "id": "com.salesforce.util.event",
-            "file": "plugins/com.salesforce/www/com.salesforce.util.event.js",
-            "pluginId": "com.salesforce"
-        },
-        {
-            "id": "com.salesforce.util.exec",
-            "file": "plugins/com.salesforce/www/com.salesforce.util.exec.js",
-            "pluginId": "com.salesforce"
-        },
-        {
-            "id": "com.salesforce.util.logger",
-            "file": "plugins/com.salesforce/www/com.salesforce.util.logger.js",
-            "pluginId": "com.salesforce"
-        },
-        {
-            "id": "com.salesforce.util.promiser",
-            "file": "plugins/com.salesforce/www/com.salesforce.util.promiser.js",
-            "pluginId": "com.salesforce"
-        },
-        {
-            "id": "com.salesforce.util.push",
-            "file": "plugins/com.salesforce/www/com.salesforce.util.push.js",
-            "pluginId": "com.salesforce"
-        },
-        {
-            "id": "phonegap-plugin-barcodescanner.BarcodeScanner",
-            "file": "plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js",
-            "pluginId": "phonegap-plugin-barcodescanner",
-            "clobbers": [
-                "cordova.plugins.barcodeScanner"
-            ]
-        },
-        {
-            "id": "cordova-plugin-console.console",
-            "file": "plugins/cordova-plugin-console/www/console-via-logger.js",
-            "pluginId": "cordova-plugin-console",
-            "clobbers": [
-                "console"
-            ]
-        },
-        {
-            "id": "cordova-plugin-console.logger",
-            "file": "plugins/cordova-plugin-console/www/logger.js",
-            "pluginId": "cordova-plugin-console",
-            "clobbers": [
-                "cordova.logger"
-            ]
-        },
-        {
-            "id": "cordova-plugin-statusbar.statusbar",
-            "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
-            "pluginId": "cordova-plugin-statusbar",
-            "clobbers": [
-                "window.StatusBar"
-            ]
+      },
+      "*/Entitlements-Debug.plist": {
+        "parents": {
+          "aps-environment": [
+            {
+              "xml": "<string>development</string>",
+              "count": 1
+            }
+          ]
         }
-    ],
-    "plugin_metadata": {
-        "cordova-plugin-whitelist": "1.3.2",
-        "cordova-plugin-device": "1.0.1",
-        "phonegap-plugin-push": "1.5.0",
-        "cordova-plugin-wkwebview-engine": "1.1.2",
-        "com.salesforce": "5.1.0",
-        "phonegap-plugin-barcodescanner": "6.0.6",
-        "cordova-plugin-console": "1.0.7",
-        "cordova-plugin-statusbar": "2.2.3"
+      },
+      "*/Entitlements-Release.plist": {
+        "parents": {
+          "aps-environment": [
+            {
+              "xml": "<string>production</string>",
+              "count": 1
+            }
+          ]
+        }
+      }
     }
+  },
+  "installed_plugins": {
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.assetmanagement.olympus"
+    },
+    "phonegap-plugin-push": {
+      "PACKAGE_NAME": "com.assetmanagement.olympus"
+    },
+    "cordova-plugin-wkwebview-engine": {
+      "PACKAGE_NAME": "com.assetmanagement.olympus"
+    },
+    "com.salesforce": {
+      "PACKAGE_NAME": "com.assetmanagement.olympus"
+    },
+    "phonegap-plugin-barcodescanner": {
+      "CAMERA_USAGE_DESCRIPTION": " ",
+      "PACKAGE_NAME": "com.assetmanagement.olympus"
+    },
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.assetmanagement.olympus"
+    },
+    "com.mirasense.scanditsdk.plugin": {
+      "PACKAGE_NAME": "com.assetmanagement.olympus"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.assetmanagement.olympus"
+    },
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "com.assetmanagement.olympus"
+    },
+    "manateeworks-barcodescanner-v3": {
+      "PACKAGE_NAME": "com.assetmanagement.olympus"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "com.assetmanagement.olympus"
+    },
+    "com.lampa.startapp": {
+      "PACKAGE_NAME": "com.assetmanagement.olympus"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.assetmanagement.olympus"
+    },
+    "cordova-plugin-themeablebrowser": {
+      "PACKAGE_NAME": "com.assetmanagement.olympus"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.assetmanagement.olympus"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-device.device",
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
+      ]
+    },
+    {
+      "id": "phonegap-plugin-push.PushNotification",
+      "file": "plugins/phonegap-plugin-push/www/push.js",
+      "pluginId": "phonegap-plugin-push",
+      "clobbers": [
+        "PushNotification"
+      ]
+    },
+    {
+      "id": "cordova-plugin-wkwebview-engine.ios-wkwebview-exec",
+      "file": "plugins/cordova-plugin-wkwebview-engine/src/www/ios/ios-wkwebview-exec.js",
+      "pluginId": "cordova-plugin-wkwebview-engine",
+      "clobbers": [
+        "cordova.exec"
+      ]
+    },
+    {
+      "id": "com.salesforce.plugin.oauth",
+      "file": "plugins/com.salesforce/www/com.salesforce.plugin.oauth.js",
+      "pluginId": "com.salesforce"
+    },
+    {
+      "id": "com.salesforce.plugin.network",
+      "file": "plugins/com.salesforce/www/com.salesforce.plugin.network.js",
+      "pluginId": "com.salesforce"
+    },
+    {
+      "id": "com.salesforce.plugin.sdkinfo",
+      "file": "plugins/com.salesforce/www/com.salesforce.plugin.sdkinfo.js",
+      "pluginId": "com.salesforce"
+    },
+    {
+      "id": "com.salesforce.plugin.smartstore",
+      "file": "plugins/com.salesforce/www/com.salesforce.plugin.smartstore.js",
+      "pluginId": "com.salesforce",
+      "clobbers": [
+        "navigator.smartstore"
+      ]
+    },
+    {
+      "id": "com.salesforce.plugin.smartstore.client",
+      "file": "plugins/com.salesforce/www/com.salesforce.plugin.smartstore.client.js",
+      "pluginId": "com.salesforce",
+      "clobbers": [
+        "navigator.smartstoreClient"
+      ]
+    },
+    {
+      "id": "com.salesforce.plugin.sfaccountmanager",
+      "file": "plugins/com.salesforce/www/com.salesforce.plugin.sfaccountmanager.js",
+      "pluginId": "com.salesforce"
+    },
+    {
+      "id": "com.salesforce.plugin.smartsync",
+      "file": "plugins/com.salesforce/www/com.salesforce.plugin.smartsync.js",
+      "pluginId": "com.salesforce"
+    },
+    {
+      "id": "com.salesforce.util.bootstrap",
+      "file": "plugins/com.salesforce/www/com.salesforce.util.bootstrap.js",
+      "pluginId": "com.salesforce"
+    },
+    {
+      "id": "com.salesforce.util.event",
+      "file": "plugins/com.salesforce/www/com.salesforce.util.event.js",
+      "pluginId": "com.salesforce"
+    },
+    {
+      "id": "com.salesforce.util.exec",
+      "file": "plugins/com.salesforce/www/com.salesforce.util.exec.js",
+      "pluginId": "com.salesforce"
+    },
+    {
+      "id": "com.salesforce.util.logger",
+      "file": "plugins/com.salesforce/www/com.salesforce.util.logger.js",
+      "pluginId": "com.salesforce"
+    },
+    {
+      "id": "com.salesforce.util.promiser",
+      "file": "plugins/com.salesforce/www/com.salesforce.util.promiser.js",
+      "pluginId": "com.salesforce"
+    },
+    {
+      "id": "com.salesforce.util.push",
+      "file": "plugins/com.salesforce/www/com.salesforce.util.push.js",
+      "pluginId": "com.salesforce"
+    },
+    {
+      "id": "phonegap-plugin-barcodescanner.BarcodeScanner",
+      "file": "plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js",
+      "pluginId": "phonegap-plugin-barcodescanner",
+      "clobbers": [
+        "cordova.plugins.barcodeScanner"
+      ]
+    },
+    {
+      "id": "cordova-plugin-console.console",
+      "file": "plugins/cordova-plugin-console/www/console-via-logger.js",
+      "pluginId": "cordova-plugin-console",
+      "clobbers": [
+        "console"
+      ]
+    },
+    {
+      "id": "cordova-plugin-console.logger",
+      "file": "plugins/cordova-plugin-console/www/logger.js",
+      "pluginId": "cordova-plugin-console",
+      "clobbers": [
+        "cordova.logger"
+      ]
+    },
+    {
+      "id": "com.mirasense.scanditsdk.plugin.Barcode",
+      "file": "plugins/com.mirasense.scanditsdk.plugin/src/barcode.js",
+      "pluginId": "com.mirasense.scanditsdk.plugin",
+      "clobbers": [
+        "Scandit.Barcode"
+      ]
+    },
+    {
+      "id": "com.mirasense.scanditsdk.plugin.BarcodePicker",
+      "file": "plugins/com.mirasense.scanditsdk.plugin/src/barcodepicker.js",
+      "pluginId": "com.mirasense.scanditsdk.plugin",
+      "clobbers": [
+        "Scandit.BarcodePicker"
+      ]
+    },
+    {
+      "id": "com.mirasense.scanditsdk.plugin.License",
+      "file": "plugins/com.mirasense.scanditsdk.plugin/src/license.js",
+      "pluginId": "com.mirasense.scanditsdk.plugin",
+      "clobbers": [
+        "Scandit.License"
+      ]
+    },
+    {
+      "id": "com.mirasense.scanditsdk.plugin.Margins",
+      "file": "plugins/com.mirasense.scanditsdk.plugin/src/margins.js",
+      "pluginId": "com.mirasense.scanditsdk.plugin",
+      "clobbers": [
+        "Scandit.Margins"
+      ]
+    },
+    {
+      "id": "com.mirasense.scanditsdk.plugin.Point",
+      "file": "plugins/com.mirasense.scanditsdk.plugin/src/point.js",
+      "pluginId": "com.mirasense.scanditsdk.plugin",
+      "clobbers": [
+        "Scandit.Point"
+      ]
+    },
+    {
+      "id": "com.mirasense.scanditsdk.plugin.Quadrilateral",
+      "file": "plugins/com.mirasense.scanditsdk.plugin/src/quadrilateral.js",
+      "pluginId": "com.mirasense.scanditsdk.plugin",
+      "clobbers": [
+        "Scandit.Quadrilateral"
+      ]
+    },
+    {
+      "id": "com.mirasense.scanditsdk.plugin.Rect",
+      "file": "plugins/com.mirasense.scanditsdk.plugin/src/rect.js",
+      "pluginId": "com.mirasense.scanditsdk.plugin",
+      "clobbers": [
+        "Scandit.Rect"
+      ]
+    },
+    {
+      "id": "com.mirasense.scanditsdk.plugin.ScanOverlay",
+      "file": "plugins/com.mirasense.scanditsdk.plugin/src/overlay.js",
+      "pluginId": "com.mirasense.scanditsdk.plugin",
+      "clobbers": [
+        "Scandit.ScanOverlay"
+      ]
+    },
+    {
+      "id": "com.mirasense.scanditsdk.plugin.ScanSession",
+      "file": "plugins/com.mirasense.scanditsdk.plugin/src/session.js",
+      "pluginId": "com.mirasense.scanditsdk.plugin",
+      "clobbers": [
+        "Scandit.ScanSession"
+      ]
+    },
+    {
+      "id": "com.mirasense.scanditsdk.plugin.ScanSettings",
+      "file": "plugins/com.mirasense.scanditsdk.plugin/src/settings.js",
+      "pluginId": "com.mirasense.scanditsdk.plugin",
+      "clobbers": [
+        "Scandit.ScanSettings"
+      ]
+    },
+    {
+      "id": "com.mirasense.scanditsdk.plugin.SymbologySettings",
+      "file": "plugins/com.mirasense.scanditsdk.plugin/src/symbologysettings.js",
+      "pluginId": "com.mirasense.scanditsdk.plugin",
+      "clobbers": [
+        "Scandit.SymbologySettings"
+      ]
+    },
+    {
+      "id": "com.mirasense.scanditsdk.plugin.ScanCase",
+      "file": "plugins/com.mirasense.scanditsdk.plugin/src/scancase.js",
+      "pluginId": "com.mirasense.scanditsdk.plugin",
+      "clobbers": [
+        "Scandit.ScanCase"
+      ]
+    },
+    {
+      "id": "com.mirasense.scanditsdk.plugin.Constraints",
+      "file": "plugins/com.mirasense.scanditsdk.plugin/src/constraints.js",
+      "pluginId": "com.mirasense.scanditsdk.plugin",
+      "clobbers": [
+        "Scandit.Constraints"
+      ]
+    },
+    {
+      "id": "cordova-plugin-dialogs.notification",
+      "file": "plugins/cordova-plugin-dialogs/www/notification.js",
+      "pluginId": "cordova-plugin-dialogs",
+      "merges": [
+        "navigator.notification"
+      ]
+    },
+    {
+      "id": "es6-promise-plugin.Promise",
+      "file": "plugins/es6-promise-plugin/www/promise.js",
+      "pluginId": "es6-promise-plugin",
+      "runs": true
+    },
+    {
+      "id": "manateeworks-barcodescanner-v3.Scanner",
+      "file": "plugins/manateeworks-barcodescanner-v3/www/MWBScanner.js",
+      "pluginId": "manateeworks-barcodescanner-v3",
+      "clobbers": [
+        "mwbScanner"
+      ]
+    },
+    {
+      "id": "cordova-plugin-vibration.notification",
+      "file": "plugins/cordova-plugin-vibration/www/vibration.js",
+      "pluginId": "cordova-plugin-vibration",
+      "merges": [
+        "navigator.notification",
+        "navigator"
+      ]
+    },
+    {
+      "id": "com.lampa.startapp.startapp",
+      "file": "plugins/com.lampa.startapp/www/startApp.js",
+      "pluginId": "com.lampa.startapp",
+      "merges": [
+        "startApp"
+      ]
+    },
+    {
+      "id": "cordova-plugin-inappbrowser.inappbrowser",
+      "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+      "pluginId": "cordova-plugin-inappbrowser",
+      "clobbers": [
+        "cordova.InAppBrowser.open",
+        "window.open"
+      ]
+    },
+    {
+      "id": "cordova-plugin-themeablebrowser.themeablebrowser",
+      "file": "plugins/cordova-plugin-themeablebrowser/www/themeablebrowser.js",
+      "pluginId": "cordova-plugin-themeablebrowser",
+      "clobbers": [
+        "cordova.ThemeableBrowser"
+      ]
+    },
+    {
+      "id": "cordova-plugin-statusbar.statusbar",
+      "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+      "pluginId": "cordova-plugin-statusbar",
+      "clobbers": [
+        "window.StatusBar"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-device": "1.0.1",
+    "phonegap-plugin-push": "1.5.0",
+    "cordova-plugin-wkwebview-engine": "1.1.2",
+    "com.salesforce": "5.1.0",
+    "phonegap-plugin-barcodescanner": "6.0.6",
+    "cordova-plugin-console": "1.0.7",
+    "com.mirasense.scanditsdk.plugin": "5.2.1",
+    "cordova-plugin-dialogs": "1.3.3",
+    "es6-promise-plugin": "4.1.0",
+    "manateeworks-barcodescanner-v3": "3.0.30",
+    "cordova-plugin-vibration": "2.1.5",
+    "com.lampa.startapp": "0.1.4",
+    "cordova-plugin-inappbrowser": "1.7.1",
+    "cordova-plugin-themeablebrowser": "0.2.17",
+    "cordova-plugin-statusbar": "2.2.3"
+  }
 }

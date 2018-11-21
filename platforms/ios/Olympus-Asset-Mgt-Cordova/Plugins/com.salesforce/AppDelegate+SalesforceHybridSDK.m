@@ -177,6 +177,8 @@
 
 - (void)initializeAppViewState
 {
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
     if (![NSThread isMainThread]) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [self initializeAppViewState];
@@ -190,7 +192,8 @@
 
 - (void)setupRootViewController
 {
-    self.viewController = [[SFHybridViewController alloc] initWithConfig:(SFHybridViewConfig*)[SalesforceSDKManager sharedManager].appConfig];
+    self.viewController = [[SFHybridViewController alloc] initWithConfig:(SFHybridViewConfig*)[SalesforceSDKManager sharedManager].appConfig
+        useUIWebView:YES];
     self.window.rootViewController = self.viewController;
 }
 
